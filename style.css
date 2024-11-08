@@ -1,0 +1,95 @@
+
+/* Chat Container Styles */
+#chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    display: none; /* Initially hidden */
+  }
+
+  /* Media Styles */
+#chat-container .message img {
+  max-width: 100%;
+  height: auto;
+}
+#chat-container .message video {
+  max-width: 100%;
+  height: auto;
+}
+
+  /* Chat Button Styles */
+  #toggle-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #12a42d; /* Blue background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 102;
+    font-size: 25px;
+    display: flex; /* Enable flexbox for centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  #toggle-chat:hover {
+    background-color: #9322b9;
+  }
+
+  /* Chat Body Styles */
+  #chat-body {
+    padding: 10px;
+    max-height: 300px; /* Limit the height of the chat body */
+    overflow-y: auto; /* Add a vertical scrollbar if content exceeds height */
+  }
+
+  /* Chat Message Styles */
+  .chat-message {
+    margin-bottom: 10px;
+  }
+
+  .chat-message.bot-message {
+    text-align: left;
+  }
+
+  .chat-message.user-message {
+    text-align: right;
+  }
+
+  .chat-message .message {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+
+  .chat-message.bot-message .message {
+    background-color: #dbf2c9;
+    border-radius: 10px;
+  }
+
+  /* Button Group Styles */
+  .button-group button {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    padding: 8px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #12a42d;
+    color: white;
+    cursor: pointer;
+    width: 96%; /* Make buttons full width */
+    display: block; /* Ensure buttons stack vertically */
+  }
+
+  .button-group button:hover {
+    background-color: #9322b9;
+  }
